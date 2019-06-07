@@ -24,3 +24,11 @@ Sim, isso mesmo o que você está imaginando, já vamos começar a fazer a pipel
 Crie uma nova Pipeline, e selecione a última opção de criar usando o editor clássico sem YAML. Você pode fazer de várias maneiras sua pipeline, escolha a que mais se encaixa com o que você está precisando ou siga o tutorial utilizando o método que adotamos.
 
 ![Desktop Screenshot 2019 06 07 - 15 12 56 86](https://user-images.githubusercontent.com/45598049/59124780-f4371280-8936-11e9-81a4-a91c756ca0cb.png)
+
+Selecione Azure Repos Git como fonte, escolha também o projeto e o repositório que iremos utilizar.
+
+A próxima etapa será a de escolher um Template que vai ser adotado na esteira da Pipeline, o Azure DevOps vai criar uma Pipeline quase completa para a linguagem que você selecionar, com poucas configurações tudo vai estar pronto para ser utilizado. O projeto que fizemos upload no repos é .NET, então selecione a opção que vai se encaixar com o seu projeto.
+
+![Desktop Screenshot 2019 06 07 - 15 18 23 81](https://user-images.githubusercontent.com/45598049/59125091-bb4b6d80-8937-11e9-8c7b-3808514bb4d7.png)
+
+
