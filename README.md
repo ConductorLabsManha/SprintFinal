@@ -1,11 +1,11 @@
-CI-CD de uma aplicações .NET no Azure WebApp utilizando o Azure DevOps
+# CI-CD de uma aplicações .NET no Azure WebApp utilizando o Azure DevOps
 
 Requisitos:
 - Assinatura paga do Portal Azure.
 - Acesso ao Azure DevOps.
 - Projeto funcional no Github.
 
-# Iniciando no Azure DevOps
+## Iniciando no Azure DevOps
 
 Esse tutorial inicial é bastante simples e fácil de ser realizado, nele vamos deixar o seu projeto pronto para iniciar o CI-CD.
 
@@ -16,7 +16,9 @@ Crie o seu projeto, e voilá, já temos o primeiro projeto dentro do Devops.
 O próximo passo é passar o seu projeto para dentro do Repos do Azure DevOps, clique em Repos e siga os passos que a ferramente disponiza.
 
 ![Desktop Screenshot 2019 06 07 - 14 56 18 45](https://user-images.githubusercontent.com/45598049/59124359-ce5d3e00-8935-11e9-9ee8-dc0fcfc642b5.png)
-de 
+
+### Build
+
 Com o seu projeto dentro do Repos, vamos para a parte legal da ferramenta. vá para o menu de Pipelines e selecione a opção de Build.
 
 Sim, isso mesmo o que você está imaginando, já vamos começar a fazer a pipeline de Build do seu projeto, e você vai ver como simples é criar sua pipe.
@@ -44,4 +46,28 @@ Salve todas as configurações e clique em Save & queue.
 Pode demorar alguns minutos, mas se tudo estiver certo com a sua pipeline, vamos ter essa linda imagem abaixo e o seu artifact do projeto será criado.
 
 ![Desktop Screenshot 2019 06 07 - 15 41 17 54](https://user-images.githubusercontent.com/45598049/59126178-cb188100-893a-11e9-89f4-833f9dc3841f.png)
+
+
+### Release
+
+Agora com o artifact do seu projeto criado, podemos deployar para um WebApp e colocar o projeto no ar.
+
+Um passo bastante importate é criar uma aplicação dentro do [Portal do Azure](https://portal.azure.com).
+
+Precisamos criar a aplicação onde iremos deployar o nosso projeto, vá em Serviços de Aplicativos e adicione um novo serviço.
+
+![Desktop Screenshot 2019 06 07 - 15 48 44 03](https://user-images.githubusercontent.com/45598049/59126713-21d28a80-893c-11e9-92ab-0131f70a8105.png)
+
+Agora já vamos ter onde deployar o nosso projeto, agora vamos para a parte de Release do Azure DevOps.
+
+Adicione uma nova Pipeline de release, e selecione a opção Azure App Service Deployment.
+
+![Desktop Screenshot 2019 06 07 - 15 56 29 39](https://user-images.githubusercontent.com/45598049/59127127-251a4600-893d-11e9-8d8a-d16792c4fc8c.png)
+
+Igual a Pipeline de Build, a de Release vai ser criada praticamente pronta, bastando você configurar a assinatura do Portal da Azure, selecionar a aplicação que criamos, e o artifact gerado pela a pipeline de build.
+
+Salve as informações e clique em criar Release, agora só esperar mais um pouco que o seu projeto será deployado dentro da aplicação.
+
+![Desktop Screenshot 2019 06 07 - 16 02 39 17](https://user-images.githubusercontent.com/45598049/59127350-cbfee200-893d-11e9-9a17-df6dfb7c0820.png)
+
 
