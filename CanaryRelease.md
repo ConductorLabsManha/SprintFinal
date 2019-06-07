@@ -34,4 +34,8 @@ Em Produção, iremos criar mais duas etapas, iniciando com o Swap do Stage para
 
 ![Desktop Screenshot 2019 06 07 - 16 49 25 24](https://user-images.githubusercontent.com/45598049/59129905-6cf09b80-8944-11e9-8c7d-02666cee87a1.png)
 
+Próxima etapa vai ser a de parar o ambiente de Stage para não gerar custos extras.
 
+![Desktop Screenshot 2019 06 07 - 16 53 12 55](https://user-images.githubusercontent.com/45598049/59130097-e25c6c00-8944-11e9-8b21-f6d3695f6c90.png)
+
+Com isso o CanaryRelease fica completo, a aplicação vai ser atualizada para a nova versão.
