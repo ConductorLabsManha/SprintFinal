@@ -37,9 +37,10 @@ A Pipeline padrão como eu já citei, é completa, bastando você mudar algumas 
 
 ![Desktop Screenshot 2019 06 07 - 15 28 04 24](https://user-images.githubusercontent.com/45598049/59125671-6b6da600-8939-11e9-958f-4a818528ac22.png)
 
-Para ativar a Integração Contínua é bastante simples, basta ir em Triggers e habilitar a opção de continuous integration, e a sua pipeline vai estar com o CI ativado, quando tiver alguma alteração no código, ela vai ser ativida.
+   #### Continuous Integration (CI)
+   Para ativar a Integração Contínua é bastante simples, basta ir em Triggers e habilitar a opção de continuous integration, e a sua pipeline vai estar com o CI ativado, quando tiver alguma alteração no código, ela vai ser ativida.
 
-![Desktop Screenshot 2019 06 07 - 15 28 27 32](https://user-images.githubusercontent.com/45598049/59125858-e8008480-8939-11e9-9df4-7dd36814ebf7.png)
+   ![Desktop Screenshot 2019 06 07 - 15 28 27 32](https://user-images.githubusercontent.com/45598049/59125858-e8008480-8939-11e9-9df4-7dd36814ebf7.png)
 
 Depois de todas essas configurações, vamos para a parta mais interessante ? hora de testar a pipe de Build.
 Salve todas as configurações e clique em Save & queue.
@@ -66,8 +67,17 @@ Adicione uma nova Pipeline de release, e selecione a opção Azure App Service D
 
 Igual a Pipeline de Build, a de Release vai ser criada praticamente pronta, bastando você configurar a assinatura do Portal da Azure, selecionar a aplicação que criamos, e o artifact gerado pela a pipeline de build.
 
+   #### Continuous Deployment (CD)
+
+   Para ativar o CD a pipeline de Release é bastante simples, Selecione o trigger que está marcado na imagem abaixo e habilete a função de continuous deployment. quando for gerada alguma nova versão do seu artifact, a pipeline de Deploy vai ser ativada.
+
+   ![Desktop Screenshot 2019 06 07 - 16 09 23 67](https://user-images.githubusercontent.com/45598049/59127973-4f6d0300-893f-11e9-8e7c-753383f01fdb.png)
+
+
+
 Salve as informações e clique em criar Release, agora só esperar mais um pouco que o seu projeto será deployado dentro da aplicação.
 
 ![Desktop Screenshot 2019 06 07 - 16 02 39 17](https://user-images.githubusercontent.com/45598049/59127350-cbfee200-893d-11e9-9a17-df6dfb7c0820.png)
 
+Seu projeto vai estar pronto para ser utilizado dentro da plataforma da Azure. Enjoy ^^  .
 
