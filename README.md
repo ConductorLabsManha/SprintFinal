@@ -39,4 +39,9 @@ Para ativar a Integração Contínua é bastante simples, basta ir em Triggers e
 
 ![Desktop Screenshot 2019 06 07 - 15 28 27 32](https://user-images.githubusercontent.com/45598049/59125858-e8008480-8939-11e9-9df4-7dd36814ebf7.png)
 
+Depois de todas essas configurações, vamos para a parta mais interessante ? hora de testar a pipe de Build.
+Salve todas as configurações e clique em Save & queue.
+Pode demorar alguns minutos, mas se tudo estiver certo com a sua pipeline, vamos ter essa linda imagem abaixo e o seu artifact do projeto será criado.
+
+![Desktop Screenshot 2019 06 07 - 15 41 17 54](https://user-images.githubusercontent.com/45598049/59126178-cb188100-893a-11e9-89f4-833f9dc3841f.png)
 
