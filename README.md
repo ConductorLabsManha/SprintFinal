@@ -31,4 +31,12 @@ A próxima etapa será a de escolher um Template que vai ser adotado na esteira 
 
 ![Desktop Screenshot 2019 06 07 - 15 18 23 81](https://user-images.githubusercontent.com/45598049/59125091-bb4b6d80-8937-11e9-8c7b-3808514bb4d7.png)
 
+A Pipeline padrão como eu já citei, é completa, bastando você mudar algumas configurações para o seu projeto que tudo vai funcionar perfeitamente, o Azure DevOps mostra todas as configurações necessárias para serem alteradas na pipeline, então fique tranquilo enquanto a isso.
+
+![Desktop Screenshot 2019 06 07 - 15 28 04 24](https://user-images.githubusercontent.com/45598049/59125671-6b6da600-8939-11e9-958f-4a818528ac22.png)
+
+Para ativar a Integração Contínua é bastante simples, basta ir em Triggers e habilitar a opção de continuous integration, e a sua pipeline vai estar com o CI ativado, quando tiver alguma alteração no código, ela vai ser ativida.
+
+![Desktop Screenshot 2019 06 07 - 15 28 27 32](https://user-images.githubusercontent.com/45598049/59125858-e8008480-8939-11e9-9df4-7dd36814ebf7.png)
+
 
